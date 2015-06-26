@@ -1,0 +1,19 @@
+@import '_colors-dimensions.scss';
+@import '_header.scss';
+@import '_mainContent.scss';
+
+.background {
+	border: 1px solid #FFF;
+	width: $background;
+	margin: auto;
+	background: url('../images/layout-background.png');
+	background-size: 100% 100%;
+	div.mainFrame {
+		clear: both;
+		margin: auto;
+		height: 1250px;
+		width: $mainFrame;
+		background-color: #FFF;
+		margin-bottom: 100px;
+	}
+}
