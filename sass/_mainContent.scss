@@ -1,0 +1,470 @@
+div.rightSideContent {
+	float: right;
+	width: 170px;
+	font-family: ‘Metrophobic’, Arial, serif; 
+	font-weight: 400; 
+	margin-right: 20px;
+	div.rightUpContent {
+		width: 150px;
+		height: 110px;
+		background: linear-gradient(to right, $headerGradient4, $blueGradient1);
+		padding-top: 20px;
+		padding-right: 20px;
+		margin-bottom: 20px;
+		span {
+			&.advancedSearch {
+				width: 150px;
+				display: table-cell;
+				text-align: right;
+				color: #FFF;
+				font-size: 14px;
+			}
+			&.summerSeason {
+				padding-left: 20px;
+				width: 150px;
+				color: #FFF;
+				font-size: 14px;
+				position: relative;
+				img {
+					position: absolute;
+					left: 105px;
+					bottom: -6px;
+					width: 23px;
+					height: 23px;
+				}	
+			}
+		}	
+		img.arrow {
+			float: right;
+			width: 13px;
+			height: 10px;
+			margin-top: 5px;
+			margin-bottom: 20px;
+		}
+		hr {
+			width: 168px;
+			margin: auto;
+			border-color: $headerGradient3;
+			margin-bottom: 10px;
+		}
+	}
+	div.rightMidContent {
+		width: 150px;
+		height: 110px;
+		padding-right: 20px;
+		background-color: #FFF;
+		ul {
+			color: $blueGradient1;
+			font-size: 14px;
+			padding-left: 20px;
+			position: relative;
+			list-style: none;
+			img {
+				&.temperature {
+					width: 25px;
+					height: 25px;
+					position: absolute;
+					left: 125px;
+				}
+			}
+			span {
+				display: block;
+				margin-bottom: 15px;
+				color: $blueGradient1; 
+			}
+			li {
+				padding-top: 10px;
+				vertical-align: middle;
+				vertical-align: middle;
+				a {
+					text-decoration: none;
+					color: $headerGradient2;
+					img.menu-arrow {
+						width: 7px;
+						height: 7px;
+						margin-bottom: 1px;
+						margin-right: 3px;
+					}
+				}
+			}
+		}
+	}	
+	div.rightBottomContent {
+		width: 170px;
+		background: linear-gradient(to right, $headerGradient4, $blueGradient1);
+		margin-right: 20px;
+		margin-bottom: 20px;
+		border-radius: 5px;
+		ul {
+			list-style: none;
+			padding: 0;
+			li {
+				padding-left: 20px;
+				padding-top: 10px;
+				padding-bottom: 10px;
+				border-bottom: 1px ridge $headerGradient3;
+				a {
+					color: #FFF;
+					font-size: 14px;
+					text-decoration: none;
+					&:hover {
+						text-decoration: underline;
+					}
+				}
+			}
+		}
+	}
+}
+
+div.mainContent {
+	float: left;
+	width: 770px;
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-top: 20px;
+	position: relative;
+	a {
+		text-decoration: none;
+		div.houseExample {
+			z-index: 3;
+			border-radius: 2px;
+			width: 130px;
+			float: left;
+			height: 170px;
+			padding-top: 10px;
+			padding-left: 10px;
+			padding-right: 10px;
+			box-shadow: 1px 2px 10px 0 $blueGradient1;
+			margin-right: 5px;
+			position: relative;
+			background-size: 100% 100%;
+			background-color: #FFF;
+			span.price {
+				display: none;
+				color: $orange;
+			}
+			img.stars {
+				display: none;
+				margin-top: 10px;
+				width: 80%;
+			}
+			&:hover {
+				height: 220px;
+				span {
+					color: $orange;
+				}
+				img.stars {
+					display: block;
+				}
+				span.price {
+					display: block;
+				}
+			}
+			img {
+				width: 100%;
+				margin-bottom: 10px;
+			}
+			span {
+				font-family: ‘Metrophobic’, Arial, serif;
+				font-size: 13px;
+				color: $exampleHouseFontColor;
+				font-weight: bold;
+			}
+		}
+		div.houseExampleLast {
+			@extend .houseExample;
+			margin-right: 0;
+		}	
+	}
+	div.leftSideContainer {
+		width: 220px;
+		position: absolute;
+		top: 180px;
+		margin-top: 20px;
+		div.welcome {
+			z-index: 1;
+			float: left;
+			font-family: ‘Metrophobic’, Arial, serif;
+			font-size: 13px;
+			color: $welcomeFontColor;
+			float: left;
+			width: 180px;
+			box-shadow:inset 1px 0 3px 0 #36475E;
+			border-radius: 3px;
+			padding-left: 20px;
+			padding-right: 20px;
+			padding-bottom: 20px;
+		}
+		ul.leftMenu {
+			padding: 0;
+			list-style: none;
+			float: left;
+			width: 100%;
+			position: relative;
+			&:last-child {
+				border-bottom: 0;
+			}
+			li {
+				margin-top: 2px;
+				width: 210px;
+				height: 40px;
+				background-color: $leftMenuColor;
+				box-shadow: 0 1px 2px 0 #36475E;
+				padding-top: 10px;
+				padding-right: 10px;
+				padding-bottom: 10px;
+				a {
+					margin-left: 10px;
+					display: block;
+					float: left;
+					text-decoration: none;
+					color: $welcomeFontColor;
+					width: 200px;
+					height: 40px;
+					position: relative;
+					&:hover {
+						background-color: $leftMenuHover;
+						border-radius: 3px;
+						box-shadow:inset 1px 0 3px 0 #36475E;
+					}
+					span {
+						padding-bottom: 10px;
+						img {
+							position: absolute;
+							margin-right: 10px;
+							top: 5px;
+							left: 10px;
+						}
+						&.txt {
+							margin-top: 5px;
+							display: block;
+							font-size: 13px;
+							font-weight: bold;
+							margin-left: 55px;
+						}
+					}
+				}
+			}
+		}
+	}	
+	div.middleContainer {
+		position: absolute;
+		z-index: 2;
+		top: 180px;
+		left: 240px;
+		width: 530px;
+		margin-top: 20px;
+		div.upperLine {
+			width: 100%;
+			height: 50px;
+			border-bottom: 4px ridge $headerGradient3;
+			a.rightButton {
+				display: block;
+				float: right;
+				width: 90px;
+				height: 25px;
+				background: linear-gradient($headerGradient1, $headerGradient3);
+				border-radius: 5px;
+				color: #FFF;
+				padding-right: 10px;
+				font-weight: bold;
+				font-size: 20px;
+				text-align: right;
+				box-shadow: 0 1px 2px 0 #3C6B63;
+			}
+			a.leftButton {
+				display: block;
+				float: right;
+				width: 30px;
+				height: 25px;
+				background: linear-gradient(#FFF, $searchGradient);
+				border-radius: 5px;
+				color: $welcomeFontColor;
+				padding-left: 10px;
+				font-weight: bold;
+				font-size: 20px;
+				text-align: left;
+				margin-right: 5px;
+				box-shadow: 0 1px 2px 0 #3C6B63;	
+			}
+			img {
+				&.circles {
+					float: right;
+					height: 17px;
+					padding-right: 15px;
+					padding-top: 5px;
+				}
+				&.line {
+					float: right;
+					margin-top: 10px;
+					margin-right: 25px;
+					width: 248px;
+				}
+			}
+		}
+		span.topObjects {
+			display: block;
+			margin-top: 10px;
+			color: $headerGradient3;
+			font-family: 'Bree Serif', serif;
+			font-size: 25px;
+			position: relative;
+			margin-bottom: 20px;
+			img {
+				position: absolute;
+				width: 30px;
+				left: 500px;
+				top: 5px;
+			}
+		}
+		a {
+			text-decoration: none;
+			div.topHouses {
+				border-radius: 2px;
+				width: 107px;
+				float: left;
+				height: 90px;
+				padding-top: 10px;
+				padding-left: 10px;
+				padding-right: 10px;
+				box-shadow: 1px 2px 10px 0 $blueGradient1;
+				margin-right: 5px;
+				position: relative;
+				img {
+					width: 100%;
+					margin-bottom: 10px;
+				}
+			}
+		}
+		div.bottomRightContainer {
+			margin-top: 20px;
+			padding-top: 15px;
+			float: right;
+			width: 310px; 
+			border-top: 4px ridge $orange;
+			border-top-right-radius: 3px;
+			border-top-left-radius: 3px;
+			span {
+				&.news {
+					font-family: 'Bree Serif', serif;
+					display: block;
+					margin-bottom: 28px;
+					font-size: 25px;
+					position: relative;
+					color: $orange;
+					a {
+						img.newsImg {
+							position: absolute;
+							left: 290px;
+							top: 8px;
+						}
+					}
+				}
+			}
+			span.date {
+				display: block;
+				width: 100%;
+				font-family: ‘Metrophobic’, Arial, serif;
+				font-size: 13px;
+				color: $welcomeFontColor;
+				margin-bottom: 15px;
+				span {
+					color: $orange;
+				}
+			}
+			div.newsContent {
+				width: 100%;
+				img {
+					width: 45%;
+					float: left;
+					padding-top: 5px;
+				}
+				ul.newsContentTxt1 {
+					margin: 0;
+					padding: 0;
+					font-family: ‘Metrophobic’, Arial, serif;
+					list-style: none;	 
+					color: $welcomeFontColor;
+					width: 50%;
+					float: left;
+					margin-left: 15px;
+					list-style: none;
+ 					li {
+ 						&:first-child {
+ 						font-weight: bold;
+ 						font-size: 12px;
+ 						padding-bottom: 15px;
+ 						}
+ 						&:last-child {
+	 						font-size: 12px;
+	 						margin-bottom: 23px;
+	 					}	
+					}
+				}
+				hr {
+					margin-bottom: 20px;
+				}
+			}
+		}
+		div.bottomLeftContainer {
+			padding-top: 15px;
+			margin-top: 20px;
+			margin-right: 20px;
+			float: left;
+			width: 200px;
+			border-top: 4px ridge $orange;
+			border-top-right-radius: 3px;
+			border-top-left-radius: 3px;
+			span {
+				&.footRoads {
+					font-family: 'Bree Serif', serif;
+					display: block;
+					margin-bottom: 30px;
+					font-size: 25px;
+					position: relative;
+					color: $orange;
+					a {
+						img.footRoadsImg {
+							top: 9px;
+							position: absolute;
+							left: 180px;
+						}
+					}
+				}
+			}
+			div.Road {
+				border-bottom: 1px ridge;
+				width: 100%;
+				height: 70px; 
+				padding-bottom: 20px;
+				margin-top: 15px;
+				img.orangeSignpost {
+					float: left;
+					height: 30px;
+				}
+				ul {
+					width: 80%;
+					list-style: none;
+					margin: 0;
+					padding: 0;
+					float: left;
+					margin-left: 10px;
+					font-family: ‘Metrophobic’, Arial, serif;
+					color: $welcomeFontColor;
+					font-size: 13px;
+					li:first-child {
+						padding-bottom: 10px;
+						font-weight: bold;
+					}
+				}
+			}			
+		}
+	}
+}
+span.bottomSign {
+	padding-bottom: 20px;
+	padding-left: 100px;
+	font-family: ‘Metrophobic’, Arial, serif;
+	font-size: 12px;
+	font-color: $welcomeFontColor;
+}

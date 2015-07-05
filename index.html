@@ -1,38 +1,312 @@
 <!DOCTYPE html>
-<html lang="en-us">
-  <head>
-    <meta charset="UTF-8">
-    <title>Ekarpacz by Leksarus</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
-  </head>
-  <body>
-    <section class="page-header">
-      <h1 class="project-name">Ekarpacz</h1>
-      <h2 class="project-tagline">Project contains HTML content and styles of front page based on sample graphic (ekarpacz) from Rahu.pl.</h2>
-      <a href="https://github.com/Leksarus/ekarpacz" class="btn">View on GitHub</a>
-      <a href="https://github.com/Leksarus/ekarpacz/zipball/master" class="btn">Download .zip</a>
-      <a href="https://github.com/Leksarus/ekarpacz/tarball/master" class="btn">Download .tar.gz</a>
-    </section>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>ekarpacz</title>
+	<link rel="stylesheet" href="./css/main.css"> 
+	<link href='http://fonts.googleapis.com/css?family=Bree+Serif' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Nunito' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<div class="background">
+		<div class="mainFrame">
+			<div class="header">
+				<div class="headerUp">
+					<div class="logo">
+						<img src="./images/header/logo.png" alt="logo">
+						<span>ekarpacz.info</span>
+						<span>najlepsze noclegi w Karpaczu</span>
+					</div>
+					<div class="yellowStrap"></div>
+					<div class="upRight">
+						<a href="#">dodaj<br>obiekt</a>
+						<a href="#">></a>
+					</div>
+					<img src="./images/header/header-mountain.png">
+				</div>
+				<div class="headerMiddle">
+					<ul>
+						<li>
+							<a href="#" class="homePage">
+								<img src="./images/header/main-page.png" alt="main-page">
+								<span class="homePageSpan">Strona główna</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="./images/header/accomodation-base.png" alt="accomodation-base">
+								<span class="accomodationSpan">Baza noclegów</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="./images/header/trade-base.png" alt="trade-base" class="acco">
+								<span class="tradeSpan">Baza usług i &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;handlu</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="./images/header/tourist-info.png" alt="tourist-info">
+								<span class="touristSpan">Informator &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;turystyczny</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="./images/header/city-history.png" alt="city-history">
+								<span class="historySpan">Historia miasta</span>
+							</a>
+						</li>
+					</ul>
+					<div class="headerMiddleRight">
+						<img src="./images/header/weather-cloud.png" alt="cloud">
+						<span>Częściowe zachmurzenie</span>
+						<span>Temp. w dzień: 26 &ordm; C</span>
+						<span>Temp. w nocy: 17&ordm; C</span>
+					</div>
+				</div>
+				<div class="headerDown">
+					<a 	href="#" class="button"><img src="./images/header/loupe.png"></a>
+					<div class="search">
+						<img src="./images/header/zipper.png">
+						<span class="priceLimit">Zakres cen:</span>
+						<span class="accomodationForU">Wyszukaj nocleg dla siebie:</span>
+						<select>
+							<option>pensjonaty <img src="./images/header/arrow.png"></option>
+							<option>hotele</option>
+							<option>kwatery</option>
+							<option>motele</option>
+							<option>mordownie</option>
+							<option>burdele</option>
+						</select>
+					</div>
+				</div>
+			</div>
+			<div class="rightSideContent">
+				<div class="rightUpContent">
+					<span class="advancedSearch">wyszukiwanie zaawansowane</span>
+					<img src="./images/main-content/arrow.png" alt="arrow" class="arrow">
+					<hr>
+					<span class="summerSeason"><b>Sezon letni</b> <img src="./images/main-content/sun.png" alt="sun"></span>
+				</div>	
+				<div class="rightMidContent">
+					<ul><span class="winterSeason"><b>Sezon zimowy</b><img src="./images/main-content/temperature.png" alt="temperature" class="temperature"></span>
+						<li class="ski"><a href="#"><img src="./images/main-content/menu-arrow.png" class="menu-arrow">trasy narciarskie</a></li>
+						<li><a href="#"><img src="./images/main-content/menu-arrow.png" class="menu-arrow">wyciągi narciarskie</a></li>
+						<li><a href="#"><img src="./images/main-content/menu-arrow.png" class="menu-arrow">wypożyczalni</a></li>
+					</ul>
+				</div>
+				<div class="rightBottomContent">
+					<ul >
+						<li><a href="#">Aktualności</a></li>
+						<li><a href="#">Galeria zdjęć</a></li>
+						<li><a href="#">Galeria video</a></li>
+						<li><a href="#">Dodawanie obiektu</a></li>
+						<li><a href="#">Cennik</a></li>
+						<li><a href="#">Reklama</a></li>
+						<li><a href="#">Kontakt</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="mainContent">
+				<a href="#">
+					<div class="houseExample">
+						<img src="./images/main-content/karkonosze-pear.png" alt="karkonosze-pear">
+						<span>Perła Karkonoszy Willa Spa</span>
+						<img src="./images/main-content/stars.png" alt="stars" class="stars">
+						<span class="price">20-50 zł za osobę</span>
+					</div>
+				</a>
+				<a href="#">	
+					<div class="houseExample">
+						<img src="./images/main-content/stokrotka.png" alt="stokrotka">
+						<span>Stokrotka - Ośrodek wypoczynkowy</span>
+						<img src="./images/main-content/stars.png" alt="stars" class="stars">
+						<span class="price">40-80 zł za osobę</span>
 
-    <section class="main-content">
-      <h1>
-<a id="ekarpacz" class="anchor" href="#ekarpacz" aria-hidden="true"><span class="octicon octicon-link"></span></a>ekarpacz</h1>
+					</div>	
+				</a>	
+				<a href="#">			
+					<div class="houseExample">
+						<img src="./images/main-content/avita.png" alt="avita">
+						<span>Willa Avita - dom gościnny</span>
+						<img src="./images/main-content/stars.png" alt="stars" class="stars">
+						<span class="price">70-120 zł za osobę</span>
 
-<p>Project contains HTML content and styles of front page based on sample graphic (ekarpacz) from Rahu.pl.</p>
+					</div>	
+				</a>	
+				<a href="#">			
+					<div class="houseExample">
+						<img src="./images/main-content/architekton.png" alt="architekton">
+						<span>Architekton - ośrodek wypoczynkowy</span>
+						<img src="./images/main-content/stars.png" alt="stars" class="stars">
+						<span class="price">30-70 zł za osobę</span>
 
-      <footer class="site-footer">
-        <span class="site-footer-owner"><a href="https://github.com/Leksarus/ekarpacz">Ekarpacz</a> is maintained by <a href="https://github.com/Leksarus">Leksarus</a>.</span>
+					</div>	
+				</a>	
+				<a href="#">			
+					<div class="houseExampleLast">
+						<img src="./images/main-content/konradówka.png" alt="konradówka">
+						<span>Konradówka WellnesS & Spa - Hotel</span>
+						<img src="./images/main-content/stars.png" alt="stars" class="stars">
+						<span class="price">50-90 zł za osobę</span>
 
-        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
-      </footer>
-
-    </section>
-
-  
-  </body>
+					</div>
+				</a>	
+				<div class="leftSideContainer">
+					<div class="welcome">
+						<h3>Witamy w Karpaczu</h3>
+						<span>Nulla at magna eu elit blandit scelerisque sed a lorem. Integer imperdiet vehicula volutpat. Integer quis magna unc, aliqua imperdiet risus. Nulla vitae diam sed mi auctor venenatis. Curabitur hendrerit, nibh ac consequat.</span>
+					</div>
+					<ul class="leftMenu">
+						<li>
+							<a href="htttp://www.wp.pl">
+								<span><img src="./images/main-content/signpost.png" alt="signpost"><span class="txt">Szlaki turystyczne <br>w Karkonoszach</span></span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span><img src="./images/main-content/castle.png" alt="castle"><span class="txt">Zabytki Karpacza i okolic</span></span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span><img src="./images/main-content/binoclaus.png" alt="binoclaus"><span class="txt">Atrakcje w Karpaczu i okolicach</span></span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span><img src="./images/main-content/ski.png" alt="ski"><span class="txt">Trasy narciarskie biegowe i zjazdowe</span></span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span><img src="./images/main-content/clouds.png" alt="cloud"><span class="txt">Pogoda w Karpaczu na najbliższe dni</span></span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span><img src="./images/main-content/map.png" alt="map"><span class="txt">Mapy i przewodniki turystyczne</span></span>
+							</a>
+						</li>
+					</ul>
+					<div class="welcome">
+						<h3>Zapraszamy do Karpacza!</h3>
+						<span>Molestio, eros metus utricies, neque et placerat nulla est vel justo.</span>
+					</div>
+				</div>	
+				<div class="middleContainer">
+					<div class="upperLine">
+						<a href="#" class="rightButton">></a>
+						<a href="#" class="leftButton"><</a>
+						<img src="./images/main-content/circles.png" atl="circles" class="circles">
+						<img src="./images/main-content/line.png" atl="circles" class="line">
+					</div>
+					<span class="topObjects">Wyróżnione obiekty
+						<a href="#"><img src="./images/main-content/circle-arrow.png"></a>
+					</span>
+					<a href="#">
+						<div class="topHouses">
+							<img src="./images/main-content/house-1.png" alt="house-1">
+						</div>
+					</a>
+					<a href="#">
+						<div class="topHouses">
+							<img src="./images/main-content/house-2.png" alt="house-2">
+						</div>
+					</a>
+					<a href="#">
+						<div class="topHouses">
+							<img src="./images/main-content/house-3.png" alt="house-3">
+						</div>
+					</a>
+					<a href="#">
+						<div class="topHouses">
+							<img src="./images/main-content/house-4.png" alt="house-4">
+						</div>
+					</a>
+					<a href="#">
+						<div class="topHouses">
+							<img src="./images/main-content/house-4.png" alt="house-4">
+						</div>
+					</a>
+					<a href="#">
+						<div class="topHouses">
+							<img src="./images/main-content/house-5.png" alt="house-5">
+						</div>
+					</a>
+					<a href="#">
+						<div class="topHouses">
+							<img src="./images/main-content/house-6.png" alt="house-6">
+						</div>
+					</a>
+					<a href="#">
+						<div class="topHouses">
+							<img src="./images/main-content/house-7.png" alt="house-7">
+						</div>
+					</a>
+					<div class="bottomRightContainer">
+						<span class="news">Aktualności
+							<a href="#"><img src="./images/main-content/circe-orange-arrow.png" class="newsImg"></a>
+						</span>
+						<span class="date"><span><b>czwartek</b></span> 20.06.2012</span>
+						<div class="newsContent">
+							<img src="./images/main-content/happy-dude.png">
+							<ul class="newsContentTxt1">
+								<li>45 Ogólnopolska Turystyczna Giełda Piosenki Studenckiej</li>
+								<li>Mauris oget ante dui, sed aliquest urna. Integer non consequat turpis. Integer sapien augue, iaculis eu...</li>
+							</ul>
+							<hr>
+							<span class="date"><span><b>wtorek</b></span> 18.08.2012</span>
+						</div>	
+						<div class="newsContent">
+							<img src="./images/main-content/people.png">
+							<ul class="newsContentTxt1">
+								<li>Bezpłatna wycieczka po Magicznym Szlaku Ducha Gór</li>
+								<li>Mauris oget ante dui, sed aliquest urna. Integer non consequat turpis. Integer sapien augue, iaculis eu...</li>
+							</ul>
+						</div>
+					</div>
+					<div class="bottomLeftContainer">
+						<span class="footRoads">Szlaki piesze
+							<a href="#"><img src="./images/main-content/circe-orange-arrow.png" class="footRoadsImg"></a>
+						</span>
+						<div class="Road">
+							<img src="./images/main-content/orange-signpost.png" alt="orangeSignpost" class="orangeSignpost">
+							<ul>
+								<li>Z Karpacza na Śnieżkę</li>
+								<li>długość: <b>5,8km</b></li>
+								<li>czas podróży: <b>3,5 godziny</b></li>
+							</ul>
+						</div>
+						<div class="Road">
+							<img src="./images/main-content/orange-signpost.png" alt="orangeSignpost" class="orangeSignpost">
+							<ul>
+								<li>Długi szlak z Karpacza do Śnieżnych Kotłów</li>
+								<li>długość: <b>5,8km</b></li>
+								<li>czas podróży: <b>3,5 godziny</b></li>
+							</ul>
+						</div>
+						<div class="Road">
+							<img src="./images/main-content/orange-signpost.png" alt="orangeSignpost" class="orangeSignpost">
+							<ul>
+								<li>Szlak do Szklarskiej</li>
+								<li>długość: <b>5,8km</b></li>
+								<li>czas podróży: <b>3,5 godziny</b></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="bottomContent">
+			<span class="bottomContentLeftTxt">Copyright 2011-2012 <b>e-karpacz.info </b>Wszelkie prawa zastrzeżone.<br>Projekt: <b>Simplea</b><br>Wykonanie: <b>Kamil Nawrocki </b></span>
+			<span class="bottomContentRightTxt">
+				<a href="#">Współpraca</a>
+				<a href="#">Reklama w serwisie</a>
+				<a href="#">Dodaj obiekt</a>
+				<a href="#">Kontakt</a>
+			</span>
+		</div>
+	</div>
+</body>
 </html>
-
