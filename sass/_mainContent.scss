@@ -126,6 +126,7 @@ div.mainContent {
 	a {
 		text-decoration: none;
 		div.houseExample {
+			z-index: 3;
 			border-radius: 2px;
 			width: 130px;
 			float: left;
@@ -136,8 +137,8 @@ div.mainContent {
 			box-shadow: 1px 2px 10px 0 $blueGradient1;
 			margin-right: 5px;
 			position: relative;
-			background: url('./images/main-content/konradówka.png');
 			background-size: 100% 100%;
+			background-color: #FFF;
 			span.price {
 				display: none;
 				color: $orange;
@@ -181,6 +182,7 @@ div.mainContent {
 		top: 180px;
 		margin-top: 20px;
 		div.welcome {
+			z-index: 1;
 			float: left;
 			font-family: ‘Metrophobic’, Arial, serif;
 			font-size: 13px;
@@ -198,6 +200,7 @@ div.mainContent {
 			list-style: none;
 			float: left;
 			width: 100%;
+			position: relative;
 			&:last-child {
 				border-bottom: 0;
 			}
@@ -242,10 +245,11 @@ div.mainContent {
 					}
 				}
 			}
-		} 
+		}
 	}	
 	div.middleContainer {
 		position: absolute;
+		z-index: 2;
 		top: 180px;
 		left: 240px;
 		width: 530px;
@@ -336,7 +340,7 @@ div.mainContent {
 			margin-top: 20px;
 			padding-top: 15px;
 			float: right;
-			width: 280px; 
+			width: 310px; 
 			border-top: 4px ridge $orange;
 			border-top-right-radius: 3px;
 			border-top-left-radius: 3px;
@@ -344,17 +348,61 @@ div.mainContent {
 				&.news {
 					font-family: 'Bree Serif', serif;
 					display: block;
-					margin-bottom: 20px;
+					margin-bottom: 28px;
 					font-size: 25px;
 					position: relative;
 					color: $orange;
 					a {
 						img.newsImg {
 							position: absolute;
-							left: 250px;
-							top: 3px;
+							left: 290px;
+							top: 8px;
 						}
 					}
+				}
+			}
+			span.date {
+				display: block;
+				width: 100%;
+				font-family: ‘Metrophobic’, Arial, serif;
+				font-size: 13px;
+				color: $welcomeFontColor;
+				margin-bottom: 15px;
+				span {
+					color: $orange;
+				}
+			}
+			div.newsContent {
+				width: 100%;
+				img {
+					width: 45%;
+					float: left;
+					padding-top: 5px;
+				}
+				ul.newsContentTxt1 {
+					margin: 0;
+					padding: 0;
+					font-family: ‘Metrophobic’, Arial, serif;
+					list-style: none;	 
+					color: $welcomeFontColor;
+					width: 50%;
+					float: left;
+					margin-left: 15px;
+					list-style: none;
+ 					li {
+ 						&:first-child {
+ 						font-weight: bold;
+ 						font-size: 12px;
+ 						padding-bottom: 15px;
+ 						}
+ 						&:last-child {
+	 						font-size: 12px;
+	 						margin-bottom: 23px;
+	 					}	
+					}
+				}
+				hr {
+					margin-bottom: 20px;
 				}
 			}
 		}
@@ -363,7 +411,7 @@ div.mainContent {
 			margin-top: 20px;
 			margin-right: 20px;
 			float: left;
-			width: 230px;
+			width: 200px;
 			border-top: 4px ridge $orange;
 			border-top-right-radius: 3px;
 			border-top-left-radius: 3px;
@@ -371,20 +419,52 @@ div.mainContent {
 				&.footRoads {
 					font-family: 'Bree Serif', serif;
 					display: block;
-					margin-bottom: 20px;
+					margin-bottom: 30px;
 					font-size: 25px;
 					position: relative;
 					color: $orange;
 					a {
 						img.footRoadsImg {
-							top: 3px;
+							top: 9px;
 							position: absolute;
-							left: 200px;
+							left: 180px;
 						}
 					}
 				}
-					
 			}
+			div.Road {
+				border-bottom: 1px ridge;
+				width: 100%;
+				height: 70px; 
+				padding-bottom: 20px;
+				margin-top: 15px;
+				img.orangeSignpost {
+					float: left;
+					height: 30px;
+				}
+				ul {
+					width: 80%;
+					list-style: none;
+					margin: 0;
+					padding: 0;
+					float: left;
+					margin-left: 10px;
+					font-family: ‘Metrophobic’, Arial, serif;
+					color: $welcomeFontColor;
+					font-size: 13px;
+					li:first-child {
+						padding-bottom: 10px;
+						font-weight: bold;
+					}
+				}
+			}			
 		}
 	}
+}
+span.bottomSign {
+	padding-bottom: 20px;
+	padding-left: 100px;
+	font-family: ‘Metrophobic’, Arial, serif;
+	font-size: 12px;
+	font-color: $welcomeFontColor;
 }
